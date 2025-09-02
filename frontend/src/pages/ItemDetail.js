@@ -25,14 +25,16 @@ function ItemDetail() {
     return () => controller.abort();
   }, [id, navigate]);
 
-  if (!item && !error) return <p>Loading...</p>;
-  if (error) return <p style={{ padding: 16 }}>{error}</p>;
+  if (!item && !error) return <p className="container">Loading...</p>;
+  if (error) return <p className="container">{error}</p>;
 
   return (
-    <div style={{padding: 16}}>
-      <h2>{item.name}</h2>
-      <p><strong>Category:</strong> {item.category}</p>
-      <p><strong>Price:</strong> ${item.price}</p>
+    <div className="container">
+      <div className="card detail">
+        <h2>{item.name}</h2>
+        <p><strong>Category:</strong> {item.category}</p>
+        <p><strong>Price:</strong> ${item.price}</p>
+      </div>
     </div>
   );
 }

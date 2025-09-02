@@ -27,14 +27,15 @@ function Items() {
   const totalPages = meta?.totalPages || 1;
 
   return (
-    <div style={{ padding: 16 }}>
-      <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
+    <div className="container">
+      <div className="toolbar">
         <input
+          className="input"
           value={query}
           onChange={e => { setPage(1); setQuery(e.target.value); }}
           placeholder="Search..."
         />
-        <select value={limit} onChange={e => { setPage(1); setLimit(parseInt(e.target.value, 10)); }}>
+        <select className="select" value={limit} onChange={e => { setPage(1); setLimit(parseInt(e.target.value, 10)); }}>
           <option value={10}>10</option>
           <option value={20}>20</option>
           <option value={50}>50</option>
@@ -45,20 +46,26 @@ function Items() {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
+        <div className="card">
         <List
           height={500}
           width={'100%'}
           itemCount={items.length}
           itemSize={36}
         >
-          {Row}
+          {({ index, style }) => (
+            <div style={style} className="row">
+              <Link to={'/items/' + items[index].id}>{items[index].name}</Link>
+            </div>
+          )}
         </List>
+        </div>
       )}
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 12 }}>
-        <button disabled={page <= 1} onClick={() => setPage(p => Math.max(1, p - 1))}>Prev</button>
-        <span>Page {meta?.page || page} / {totalPages}</span>
-        <button disabled={page >= totalPages} onClick={() => setPage(p => Math.min(totalPages, p + 1))}>Next</button>
+      <div className="pagination">
+        <button className="btn" disabled={page <= 1} onClick={() => setPage(p => Math.max(1, p - 1))}>Prev</button>
+        <span className="muted">Page {meta?.page || page} / {totalPages}</span>
+        <button className="btn" disabled={page >= totalPages} onClick={() => setPage(p => Math.min(totalPages, p + 1))}>Next</button>
       </div>
     </div>
   );
