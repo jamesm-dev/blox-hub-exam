@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 2499
+  },
+  {
+    "id": 2,
+    "name": "Noise Cancelling Headphones",
+    "category": "Electronics",
+    "price": 399
+  },
+  {
+    "id": 3,
+    "name": "Ultra‑Wide Monitor",
+    "category": "Electronics",
+    "price": 999
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Chair",
+    "category": "Furniture",
+    "price": 799
+  },
+  {
+    "id": 5,
+    "name": "Standing Desk",
+    "category": "Furniture",
+    "price": 1199
+  },
+  {
+    "id": 6,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 49
+  },
+  {
+    "id": 7,
+    "name": "Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 129
+  },
+  {
+    "id": 8,
+    "name": "USB-C Hub",
+    "category": "Electronics",
+    "price": 69
+  },
+  {
+    "id": 9,
+    "name": "4K Webcam",
+    "category": "Electronics",
+    "price": 149
+  },
+  {
+    "id": 10,
+    "name": "Portable SSD 1TB",
+    "category": "Electronics",
+    "price": 159
+  },
+  {
+    "id": 11,
+    "name": "Smart Speaker",
+    "category": "Smart Home",
+    "price": 99
+  },
+  {
+    "id": 12,
+    "name": "LED Desk Lamp",
+    "category": "Office",
+    "price": 59
+  },
+  {
+    "id": 13,
+    "name": "Whiteboard",
+    "category": "Office",
+    "price": 89
+  },
+  {
+    "id": 14,
+    "name": "Coffee Maker",
+    "category": "Kitchen",
+    "price": 129
+  },
+  {
+    "id": 15,
+    "name": "Air Fryer",
+    "category": "Kitchen",
+    "price": 149
+  },
+  {
+    "id": 16,
+    "name": "Insulated Water Bottle",
+    "category": "Outdoors",
+    "price": 39
+  },
+  {
+    "id": 17,
+    "name": "Hiking Backpack",
+    "category": "Outdoors",
+    "price": 179
+  },
+  {
+    "id": 18,
+    "name": "Running Shoes",
+    "category": "Apparel",
+    "price": 129
+  },
+  {
+    "id": 19,
+    "name": "Yoga Mat",
+    "category": "Fitness",
+    "price": 45
+  },
+  {
+    "id": 20,
+    "name": "Adjustable Dumbbells",
+    "category": "Fitness",
+    "price": 359
+  },
+  {
+    "id": 21,
+    "name": "E-Reader",
+    "category": "Electronics",
+    "price": 139
+  },
+  {
+    "id": 22,
+    "name": "Bluetooth Tracker",
+    "category": "Electronics",
+    "price": 29
+  },
+  {
+    "id": 23,
+    "name": "Gaming Chair",
+    "category": "Gaming",
+    "price": 299
+  },
+  {
+    "id": 24,
+    "name": "Game Controller",
+    "category": "Gaming",
+    "price": 69
+  },
+  {
+    "id": 25,
+    "name": "Noise Meter",
+    "category": "Tools",
+    "price": 89
+  }
+]
